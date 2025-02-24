@@ -18,12 +18,13 @@ repositories {
 }
 
 dependencies {
+    implementation 'de.athalis.coreasm:coreasm-config:1.7.3-locke-6'
+    implementation 'com.github.thjomnx:java-systemd:1.0.0'
+    implementation 'io.github.akshayjankie:desctils:1.1'
+    
     implementation 'org.springframework.boot:spring-boot-starter'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
-    implementation group: 'de.athalis.coreasm', name: 'coreasm-config', version: '1.7.3-locke-6'
-    implementation group: 'com.github.thjomnx', name: 'java-systemd', version: '1.0.0'
-    implementation group: 'io.github.akshayjankie', name: 'desctils', version: '1.1'
 }
 
 tasks.named('test') {
